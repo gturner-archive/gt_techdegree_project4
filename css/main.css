@@ -37,13 +37,22 @@ input[type="search"] {
 }
 
 .gallery img {
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.gallery iframe {
+    width: 200px;
     height: 200px;
 }
 
 a {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+input:focus {
+    outline: none;
 }
 
 /**********
@@ -61,7 +70,11 @@ LIGHTBOX
     display: none;
 }
 
-.shade img {
+.photoView {
+    height: 600px;
+}
+
+.shadeImg {
     margin-top: 100px;
     height: 375px;
     max-width: 600px;
@@ -69,16 +82,41 @@ LIGHTBOX
 
 .shade p {
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 600px;
+    height: 54px;
 }
 
 .backButton {
     position: relative;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    width: 50px;
     bottom: 250px;
-    left: 500px;
+    left: 50px;
+    z-index: 2;
 }
 
 .nextButton {
     position: relative;
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 50px;
     bottom: 250px;
-    right: 500px;
+    right: 50px;
+    z-index: 2;
+}
+
+.closeButton {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 50px;
+    bottom: 500px;
+    left: 20px;
 }
