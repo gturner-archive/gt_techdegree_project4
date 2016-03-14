@@ -80,6 +80,11 @@ LIGHTBOX
     max-width: 600px;
 }
 
+.shadeVid {
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
 .shade p {
     color: white;
     font-family: 'Open Sans', sans-serif;
