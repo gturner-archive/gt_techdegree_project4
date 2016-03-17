@@ -7,7 +7,7 @@ GENERAL STYLES
 }
 
 .container {
-    width: 980px;
+    max-width: 1010px;
     margin: 0 auto;
     text-align: center;
     background: white;
@@ -26,10 +26,9 @@ input[type="search"] {
 }
 
 .gallery {
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .gallery span {
@@ -39,6 +38,7 @@ input[type="search"] {
 .gallery img {
     width: 200px;
     height: 200px;
+    margin: 0 15px;
 }
 
 .gallery iframe {
@@ -124,4 +124,41 @@ LIGHTBOX
     width: 50px;
     bottom: 500px;
     left: 20px;
+}
+
+iframe {
+    border: none;
+}
+
+@media (max-width: 1029px) {
+    
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 630px) {
+ 
+    .shadeImg,
+    .shadeVid {
+        width: 300px;
+        height: 187.5px;
+    }
+    
+    .shade p {
+        width: 300px;
+    }
+    
+    .nextButton,
+    .backButton {
+        bottom: 170px;
+    }
+    
+    .closeButton {
+        bottom: -100px;
+        left: -120px;
+    }
+    
+    input[type="search"] {
+        width: 300px;
+    }
 }

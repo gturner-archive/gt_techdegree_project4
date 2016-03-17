@@ -71,7 +71,7 @@ $(".linkNextButton").on("click", function() {
         $(".shade p").text(nextText);
         thisImage = thisImage.next();
     } else if(thisImage.next().attr("href") !== undefined) {
-        console.log("YOYOYO")
+        console.log("YOYOYO");
         $(".shadeVid").hide();
         $(".shadeImg").show();
         var nextSource = $(thisImage).next().attr("href");
