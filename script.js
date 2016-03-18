@@ -55,7 +55,8 @@ $(".gallery a").on("click", function(event) {
 
 $(".linkCloseButton").on("click", function(event) {
     event.preventDefault();
-    $(".shade").hide();
+    $(".shade").hide();                    
+    $(".shadeVid").attr("src", ""); 
 });
 
 $(".linkNextButton").on("click", function() {
