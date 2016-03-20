@@ -59,7 +59,7 @@ $(".linkCloseButton").on("click", function(event) {
     $(".shadeVid").attr("src", ""); 
 });
 
-$(".linkNextButton").on("click", function() {
+$(".linkNextButton").on("click", function(event) {
     event.preventDefault();
     if(thisImage.next().attr("href") !== undefined && thisImage.next().hasClass("ytvid") == true) {
         $(".shadeImg").hide();
@@ -112,7 +112,7 @@ $(".linkBackButton").on("click", function(event) {
 
 //Binding buttons for navigating lightbox
 
-Mousetrap.bind('left', function() {
+Mousetrap.bind('left', function(event) {
     if($('.shade').is(':visible')) {
         event.preventDefault();
         if(thisImage.prev().attr("href") !== undefined && thisImage.prev().hasClass("ytvid") == true) {
@@ -139,7 +139,7 @@ Mousetrap.bind('left', function() {
     }
 });
 
-Mousetrap.bind('right', function() {
+Mousetrap.bind('right', function(event) {
     if($('.shade').is(':visible')) {
         event.preventDefault();
         if(thisImage.next().attr("href") !== undefined && thisImage.next().hasClass("ytvid") == true) {
